@@ -1,0 +1,57 @@
+Recursion
+
+1. In your own words, what is recursion?
+    Recursion is the act of a function calling itself.
+2. Why is it necessary to have a base case?
+    A base case is required to end the program. Otherwise an infinite loop will occur
+    and an attempt to run the program would result in a maximum recursion depth error.
+
+Graphs
+
+1. What is a graph?
+    A graph is a data structure made of nodes connected by edges that can be directed
+    or non-directed. Each node has an adjacency list that contains all of the nodes
+    it shares an edge with.
+2. How is a graph different from a tree?
+    Graphs can differ from trees in that they can contain loops and can be non-directed.
+    Trees are acyclic, directed graphs.
+3. Give an example of something that would be good to model with a graph.
+    It would be good to use a graph to model the required steps for installing a
+    software package.
+
+
+Performance of Different Data Structures
+** I assumed the linked list and the DLL had a head and tail.
+
+Data Structure             Index   Search  Add-R   Add-L   Pop-L    Pop-R
+Python List (Array)         O(1)    O(n)    O(1)    O(n)    O(n)     O(1)
+Linked List                 O(n)    O(n)    O(1)    O(1)    O(1)     O(n)
+Doubly-Linked List          O(n)    O(n)    O(1)    O(1)    O(1)     O(1)
+Queue (as Array)             X       X      O(1)     X      O(n)      X
+Queue (as LL or DLL)         X       X      O(1)     X      O(1)      X
+Stack (as Array, LL, or DLL) X       X      O(1)     X       X        O(1)
+Deque (as DLL)               X       X      O(1)    O(1)    O(1)      O(1) 
+
+Data Structure         Get      Add      Delete   Iterate Memory
+Dictionary (Hash Map)  O(1)     O(1)     O(1)     O(n)    medium
+Set (Hash Map)         O(1)     O(1)     O(1)     O(n)    high
+Binary Search Tree     O(log n) O(log n) O(log n) O(n)    low      
+Tree                   O(n)     O(1)     O(n)     O(n)    low  
+
+
+Sorting
+
+1. Describe in words how the Bubble Sort algorithm works.
+    Bubble sort compares two indexes at a time and swaps
+    the larger item to the end of the array. Thus, the biggest
+    item "bubbles" up to the end.
+2. Describe in words how the Merge Sort algorithm works.
+    Merge sort turns every item in a list into a sorted list of one item
+    and then compares the first item in each list, adding the smaller
+    item to a new result list until nothing remains to sort.
+3. Describe in words how the Quick Sort algorithm works.
+    The quick sort algorithm uses the item at a certain index as a "pivot" point
+    to which each of the other items are compared and placed to the left if smaller
+    or to the right if larger. The same steps are then taken for the items to the left and
+    right of the pivot point. Quick sort is fast but not a stable sort (doesn't always preserve
+    order).
